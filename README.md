@@ -1,0 +1,1 @@
+This is a classic Tic-Tac-Toe game built using HTML, CSS, and JavaScript. Players can take turns to place either "X" or "O" on the 3x3 grid. The game checks for winning conditions and announces the winner, or if the game ends in a tie.
