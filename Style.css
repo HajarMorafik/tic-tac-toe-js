@@ -1,0 +1,120 @@
+* {
+          padding: 0;
+          margin: 0;
+          font-family: 'Arial', sans-serif;
+      }
+      
+      .background {
+          background-color: #000000;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+      }
+      
+      .title {
+          color: #3498DB;
+          text-align: center;
+          font-size: 36px;
+          margin-bottom: 1em;
+          text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+      }
+      
+      .display {
+          color: #FFFFFF;
+          font-size: 24px;
+          text-align: center;
+          margin-top: 0.5em;
+          margin-bottom: 1em;
+      }
+      
+      .hide {
+          display: none;
+      }
+      
+      .container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          max-width: 240px;
+          max-height: 240px;
+          gap: 5px;
+          margin-bottom: 1em;
+      }
+      
+      .tile {
+          border: 2px solid #FFFFFF;
+          min-width: 70px;
+          min-height: 70px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 40px;
+          cursor: pointer;
+          background-color: #000000;
+          transition: background-color 0.2s, transform 0.2s;
+      }
+      
+      .tile:hover {
+          background-color: #2C3E50;
+          transform: scale(1.05);
+      }
+      
+      .playerX {
+          color: #3498DB;
+      }
+      
+      .playerO {
+          color: #FFFFFF;
+      }
+      
+      .controls {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .controls button {
+          color: #000000;
+          padding: 12px 20px;
+          border-radius: 10px;
+          border: 2px solid #3498DB;
+          background-color: #FFFFFF;
+          font-size: 22px;
+          margin-left: 1.5em;
+          cursor: pointer;
+          transition: background-color 0.2s, transform 0.2s;
+      }
+      
+      .controls button:hover {
+          background-color: #3498DB;
+          color: #FFFFFF;
+          transform: scale(1.1);
+      }
+      
+      .restart {
+          background-color: #FFFFFF;
+          border: 2px solid #3498DB;
+      }
+      
+      #reset {
+          background-color: #FFFFFF;
+          border: 2px solid #3498DB;
+      }
+      
+      @media (max-width: 480px) {
+          .title {
+              font-size: 28px;
+          }
+      
+          .display {
+              font-size: 20px;
+          }
+      
+          .tile {
+              font-size: 35px;
+          }
+      }
+      
